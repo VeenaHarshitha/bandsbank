@@ -24,6 +24,12 @@
   {% endblock %}
 </head>
 <style type="text/css">
+	#messages{
+			
+			color: #fff;
+			/*padding: 10px;*/
+			/*margin-top: 10px;*/
+		}
 	body {
 			background-image: url({% static "images/2559.png" %}), url({% static "images/unsplash1.jpg" %});
 			background-size: cover;
@@ -269,7 +275,8 @@
 								   		</div>
 									</form>
 								</div>
-								{{form.errors}}
+								<div id="messages">
+								{{form.errors}}</div>
 								<div class="mt-3">
 									<div class="justify-content-center alr">
 										Already have an account?
